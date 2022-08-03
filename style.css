@@ -1,0 +1,11 @@
+main {
+  display: flex;
+}
+#design, #preview {
+  width: 320px;
+  height: 320px;
+  background-color: #ddd;
+}
+button, input, label {
+  display: block;
+}

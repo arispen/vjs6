@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>vjs6</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/water.css@2/out/water.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+  <div id="toolbox">
+    Toolbox
+    <button onclick="addInput()">input</button>
+    <button onclick="addLabel()">label</button>
+    <button onclick="addButton()">button</button>
+  </div>
+  <div>Design
+    <div id="design"></div>
+  </div>
+
+  <div id="inspector">
+    Inspector
+    <table>
+      <tr><th>Attribute</th><th>Value</th></tr>
+      <tr><td>id</td><td><span id="elementId"></span></td></tr>
+      <tr><td>text</td><td><input id="elementText" oninput="editText()"></input></td></tr>
+    </table>
+    
+  </div>
+</main>
+<main>
+  <div>
+    Code
+    <pre>
+    <textarea id="code" cols="42">(function button1_click() {
+  alert(1)//input3.value = input1.value + input2.value
+})</textarea>
+    </pre>
+  </div>
+  <div>
+    Preview <button onclick="run()">Run ▶️</button>
+    <div id="preview"></div>
+  </div>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
